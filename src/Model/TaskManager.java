@@ -1,3 +1,7 @@
+package Model;
+
+import Model.Task;
+
 import java.util.List;
 
 public interface TaskManager {
