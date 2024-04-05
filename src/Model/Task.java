@@ -9,7 +9,14 @@ public class Task {
     private LocalDate dateEcheance;
     private String priorite;
 
-    // Constructeur
+    /**
+     * Constructeur de la classe Task.
+     * @param id l'identifiant de la tâche
+     * @param titre le titre de la tâche
+     * @param description la description de la tâche
+     * @param dateEcheance la date d'échéance de la tâche
+     * @param priorite la priorité de la tâche
+     */
     public Task(int id, String titre, String description, LocalDate dateEcheance, String priorite) {
         this.id = id;
         this.titre = titre;
