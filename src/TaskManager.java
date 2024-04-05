@@ -5,5 +5,4 @@ public interface TaskManager {
     void modifierTache(Task tache);
     void supprimerTache(Task tache);
     List<Task> getTaches();
-
 }
