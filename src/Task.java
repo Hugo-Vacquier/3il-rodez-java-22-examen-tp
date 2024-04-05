@@ -57,7 +57,16 @@ public class Task {
         this.priorite = priorite;
     }
 
-    
+    // Méthode pour comparer deux tâches par leur date d'échéance
+    public int comparerParDateEcheance(Task autre) {
+        return this.dateEcheance.compareTo(autre.getDateEcheance());
+    }
+
+    // Méthode pour valider si une tâche est déjà fini
+    public boolean estEchue() {
+        LocalDate aujourdHui = LocalDate.now();
+        return this.dateEcheance.isBefore(aujourdHui);
+    }
 
 
 }
