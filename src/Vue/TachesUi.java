@@ -44,7 +44,39 @@ public class TachesUi extends JFrame {
 
         JButton ajouterButton = new JButton("Ajouter");
 
-        
+        // Gestionnaire de mise en page
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(5, 2));
+        panel.add(titreLabel);
+        panel.add(titreField);
+        panel.add(descriptionLabel);
+        panel.add(descriptionScrollPane);
+        panel.add(dateLabel);
+        panel.add(dateField);
+        panel.add(prioriteLabel);
+        panel.add(prioriteComboBox);
+        panel.add(new JLabel());
+        panel.add(ajouterButton);
+
+        // Ajout du gestionnaire d'événements au bouton "Ajouter"
+        ajouterButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Récupération des valeurs saisies
+                String titre = titreField.getText();
+                String description = descriptionArea.getText();
+                LocalDate dateEcheance = LocalDate.parse(dateField.getText());
+                String priorite = (String) prioriteComboBox.getSelectedItem();
+
+                // Création de la tâche
+                Task nouvelleTache = new Task(0, titre, description, dateEcheance, priorite);
+
+                // Ajout de la logique pour ajouter la tâche à votre système de gestion des tâches
+
+                // Affichage d'un message de confirmation
+                JOptionPane.showMessageDialog(TachesUi.this, "Tâche ajoutée avec succès");
+            }
+        });
 
         // Ajout du panneau au contenu de la fenêtre
         add(panel);
