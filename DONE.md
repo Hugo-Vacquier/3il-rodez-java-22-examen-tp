@@ -55,6 +55,7 @@ Ce document récapitule les réalisations effectuées dans le cadre du TP de ges
 ### Implémentation de la sérialisation des tâches
 
 - [X] Sauvegarde des tâches lors de la fermeture de l'application.
+La méthode pour sauvegarder les données est créée il ne me reste plus qu'a choisir un dossier ou une base pour savoir ou les enregistrer
 - [ ] Chargement des tâches lors de l'ouverture de l'application.
 - [ ] Test unitaire associé.
 
