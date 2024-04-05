@@ -7,7 +7,7 @@ Ce document récapitule les réalisations effectuées dans le cadre du TP de ges
 ### Ajout d'une tâche
 
 - [X] Formulaire de saisie des détails de la tâche.
-- [ ] Bouton "Ajouter".
+- [X] Bouton "Ajouter".
 - [ ] Test unitaire associé.
 
 (Explication et justification de ce qui a été fait...)
@@ -38,7 +38,7 @@ Ce document récapitule les réalisations effectuées dans le cadre du TP de ges
 
 ### Gestion des priorités
 
-- [ ] Possibilité de définir la priorité lors de l'ajout ou de la modification de la tâche.
+- [X] Possibilité de définir la priorité lors de l'ajout ou de la modification de la tâche.
 - [ ] Test unitaire associé.
 
 (Explication et justification de ce qui a été fait...)
@@ -54,7 +54,7 @@ Ce document récapitule les réalisations effectuées dans le cadre du TP de ges
 
 ### Implémentation de la sérialisation des tâches
 
-- [ ] Sauvegarde des tâches lors de la fermeture de l'application.
+- [X] Sauvegarde des tâches lors de la fermeture de l'application.
 - [ ] Chargement des tâches lors de l'ouverture de l'application.
 - [ ] Test unitaire associé.
 
